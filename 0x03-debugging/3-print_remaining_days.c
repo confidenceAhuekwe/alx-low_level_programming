@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "main.h"
-#define leapDaysTot366
-#define daysTot365
-#define janDaysTot31
+#define leapDaysTot 366
+#define daysTot 365
+#define janDaysTot 31
 
 /**
  * print_remaining_days - takes a date and prints how many days are left
