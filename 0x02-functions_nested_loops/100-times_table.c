@@ -41,7 +41,8 @@ void print_times_table(int n)
 				print(mul);
 			}
 			else
-			{print(mul);
+			{
+				print(mul);
 			}
 			if (num2 < n)
 			{
