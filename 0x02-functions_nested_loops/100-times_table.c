@@ -19,10 +19,9 @@ void print(int var)
 void print_times_table(int n)
 {
 	int num1, num2, mul;
-	
-	if (n < 0; || n > 15)
+
+	if (n < 0 || n > 15)
 		return;
-	
 	for (num1 = 0; num1 <= n; num1++)
 	{
 		for (num2 = 0; num2 <= n; num2++)
