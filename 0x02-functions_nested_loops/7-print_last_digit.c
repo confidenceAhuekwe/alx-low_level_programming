@@ -10,7 +10,7 @@ int print_last_digit(int last)
 {
 	int result;
 
-	if (var < 0)
+	if (last < 0)
 		result = -1 * (last % 10);
 	else
 		result = last % 10;
