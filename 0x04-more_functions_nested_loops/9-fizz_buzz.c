@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints the numbers from 1 to 100, followed by a new line
@@ -23,6 +23,10 @@ int main(void)
 		{
 			printf(" Buzz");
 		}
+		else if (x % 5 == 0 && x % 3 == 0)
+		{
+			printf(" FizzBuzz");
+		}
 		else if (x == 1)
 		{
 			printf("%d", x);
@@ -34,5 +38,6 @@ int main(void)
 	}
 
 	printf("\n");
+
 	return (0);
 }
