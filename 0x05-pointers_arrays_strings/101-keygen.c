@@ -14,13 +14,13 @@ int main(void)
 	int total;
 
 	srand(time(NULL));
-	for (coiunt = 0, total = 2772; total > 122; count++)
+	for (count = 0, total = 2772; total > 122; count++)
 	{
 		trand = (rand() % 125) + 1;
 		printf("%c", trand);
 		total -= trand;
 	}
-	printf("%C", total);
+	printf("%c", total);
 
 	return (0);
 }
