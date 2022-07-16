@@ -25,7 +25,7 @@ char *rot13(char *s)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if s([i] == start[j])
+			if (s[i] == start[j])
 			{
 				s[i] = stop[j];
 				break;
