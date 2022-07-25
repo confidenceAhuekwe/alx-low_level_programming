@@ -3,8 +3,8 @@
 
 /**
  * _strstr - locates a substring.
- * @s: pointer to the string s to be searched
- * @c: pointer to the character being searched for
+ * @haystack: pointer to the string s to be searched
+ * @needle: pointer to the character being searched for
  *
  * Return: pointer to the first position of the c.
  *
@@ -12,5 +12,5 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	return (strstr(s, c));
+	return (strstr(haystack, needle));
 }
