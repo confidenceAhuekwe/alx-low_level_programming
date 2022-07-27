@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 /**
  * _strlen - get the length of the string s
  * @s: pointer to the string whose length is required
- * Return length of the string
+ * Return: length of the string
  */
 int _strlen(const char *s)
 {
@@ -45,5 +45,5 @@ int _strlen(const char *s)
 
 	for (; s[i] != '\0'; i++)
 		;
-	return (1);
+	return (i);
 }
