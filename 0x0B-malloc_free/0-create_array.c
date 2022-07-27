@@ -5,7 +5,7 @@
 /**
  * create_array - creates an array of char.
  * @size: size of the array
- * @arr: character
+ * @c: character
  *
  * Return: pointer to the array or null if it fails
  *
@@ -22,7 +22,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
-		array_alloc[i] = arr;
+		array_alloc[i] = c;
 
 	return (array_alloc);
 }
