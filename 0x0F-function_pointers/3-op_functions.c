@@ -1,6 +1,6 @@
 #include "3-calc.h"
 
-/*8
+/**
  * op_add - function to add
  * @a: first integer
  * @b: second int
