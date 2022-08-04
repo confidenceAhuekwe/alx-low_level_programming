@@ -7,7 +7,7 @@
  * @f: the function associated
  */
 
-typdrf struct op
+typedef struct op
 {
 	char *op;
 	int (*f)(int a, int b);
