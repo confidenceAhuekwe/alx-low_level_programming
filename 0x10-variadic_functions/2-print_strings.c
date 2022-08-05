@@ -4,39 +4,29 @@
 
 /**
  * print_strings - prints strings.
- * @n: number of arguments
- * @separator: character separator of numbers
- * Return: Always 0.
+ * @n: number of strings passed
+ * @separator: pointer to a string to be printed in between numbers
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list string;
+	va_list args;
 	unsigned int i;
 	char *str;
 
-	if (separator == NULL)
-	{
-		separator = "";
-	}
-
-	va_start(string, n);
+	va_start(args, n);
 
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(string, char *);
+		str = va_arg(args, char *);
 		if (str == NULL)
-		{
 			printf("(nil)");
-			break;
-		}
-		printf("%s", str);
-		if (n == i + 1)
-		{
-			break;
-		}
-		printf("%S", separator);
+		else
+			printf("%s", str);
+		
+		if (i < n - 1 && separator != NULL)
+			printf("%s", separator);
 	}
 	printf("\n");
-	va_end(string);
+	va_end(args);
 }
