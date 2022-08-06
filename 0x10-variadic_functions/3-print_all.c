@@ -79,10 +79,10 @@ void print_all(const char * const format, ...)
 		{
 			if (*(p[j].t) == format[i])
 			{
-			printf("%s", separator);
-			p[j].f(valist);
-			separator = ", ";
-			break;
+				printf("%s", separator);
+				p[j].f(valist);
+				separator = ", ";
+				break;
 			}
 			j++;
 		}
