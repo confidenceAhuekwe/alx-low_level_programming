@@ -5,7 +5,7 @@
 
 /**
  * new_dog - create new data structure for dog
- * @name: na,me of dog
+ * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog
  *
